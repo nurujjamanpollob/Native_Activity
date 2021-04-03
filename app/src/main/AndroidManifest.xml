@@ -16,9 +16,12 @@
         <activity android:name="android.app.NativeActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden">
-            <!-- Tell NativeActivity the name of our .so -->
+
+            <!-- Add the library name in android:value field -->
             <meta-data android:name="android.app.lib_name"
                 android:value="njpollob_library" />
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
